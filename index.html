@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="C:\Users\olivi\Desktop\She Codes\Weather App\Weather-App-2.0\test.css"
+    />
+    <title>Weather App 3.0</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <h1>👩 LivCodes</h1>
+          <br />
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" id="search-form" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="city-input"
+                />
+                <button class="btn btn-outline-secondary" type="submit">
+                  Search
+                </button>
+              </form>
+              <div class="col">
+                <button
+                  class="btn btn-outline-secondary"
+                  id="current-location-button"
+                >
+                  📍 Locate
+                </button>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <h1 id="city" style="color: blueviolet">📍 Search your city</h1>
+          </div>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last Updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="http://openweathermap.org/img/wn/04d@2x.png"
+                  alt="overcast clouds"
+                  id="icon"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong id="temperature">25</strong
+                  ><span class="units"> °C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Tue</div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"> 26° </span>
+                <span class="weather-forecast-temperature-min"> 18° </span>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="weather-forecast-date">Wed</div>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"> 26° </span>
+                <span class="weather-forecast-temperature-min"> 16° </span>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"> 25° </span>
+                <span class="weather-forecast-temperature-min"> 19° </span>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="weather-forecast-date">Fri</div>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"> 23° </span>
+                <span class="weather-forecast-temperature-min"> 17° </span>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="weather-forecast-date">Sat</div>
+              <img
+                src="http://openweathermap.org/img/wn/03d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"> 25° </span>
+                <span class="weather-forecast-temperature-min"> 16° </span>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="weather-forecast-date">Sun</div>
+              <img
+                src="http://openweathermap.org/img/wn/01d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max"> 26° </span>
+                <span class="weather-forecast-temperature-min"> 15° </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <small>
+          <a
+            href="https://www.linkedin.com/in/olivia-hall-593418107/"
+            target="_blank"
+            >Coded by Olivia Hall</a
+          >
+        </small>
+      </div>
+    </div>
+    <script src="C:\Users\olivi\Desktop\She Codes\Weather App\Weather-App-2.0\test.js"></script>
+  </body>
+</html>
